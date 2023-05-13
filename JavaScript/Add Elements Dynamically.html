@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Elements Dynamically</title>
+
+</head>
+
+<body>
+    <button onclick="addElement()">Add Paragraph</button>
+    <div id="one">
+        <p>XYZ</p>
+    </div>
+
+    <script>
+        function addElement() {
+
+            var newp = document.createElement('p');
+
+            var paragraphText = document.createTextNode('Monkey D. Luffy');
+
+            newp.appendChild(paragraphText);
+
+            var existingElement = document.getElementById('one');
+
+            existingElement.appendChild(newp);
+        }
+    </script>
+</body>
+
+</html>
