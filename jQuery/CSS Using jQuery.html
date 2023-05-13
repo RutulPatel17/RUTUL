@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Using jQuery</title>
+    <style>
+        .one {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+    <button>Click Here!</button>
+    <div class="one">Monkey D. Luffy</div>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('.one').css({
+                    'color': 'blue',
+                    'font-size': '30px'
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

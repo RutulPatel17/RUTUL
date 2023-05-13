@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add class and Remove class</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .one {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div><b>Monkey D. Luffy</b></div><br>
+    <button class="add">Add Class</button>
+    <button class="remove">Remove Class</button>
+
+    <script>
+        $(document).ready(function () {
+            $('.add').click(function () {
+                $('div').addClass('one');
+            });
+
+            $('.remove').click(function () {
+                $('div').removeClass('one');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

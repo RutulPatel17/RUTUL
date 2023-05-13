@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Monkey D. Luffy</div>
+    <button>Click Here Animatef</button>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('.one').animate({
+                    left: '+=200px',
+                    opacity: 0.5,
+                    height: '+=50px',
+                    width: '+=50px'
+                }, 1000);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
